@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    {% if title %}
+        <title>Caleb's Library - {{ title }}</title>
+    {% else %}
+        <title>Caleb's Library</title>
+    {% endif %}
+  
+   </head>
+  <body>
+    <header class="site-header">
+      <ul>
+        <li><a class="nav-item nav-link" href="/">Home</a></li>
+        <li><a class="nav-item nav-link" href="/lib">Library</a></li>
+        <li><a class="nav-item nav-link" href="/insert">Insert Book</a></li>
+        <li><a class="nav-item nav-link" href="/borrowedbooks">Borrowed Books</a></li>
+    </ul>   
+  </header>
+  <body>
+    <h2>Insert Book</h2>
+    <h3>INSERT NEW BOOK</h3>
+    <form action="addbook" method="post">
+      <label for="content">Title</Title></label>
+      <br>
+      <input type="text" name="title1"
+                placeholder="Insert Title"
+                value="{{ request.form['title1'] }}"></input>
+      <br>
+        <label for="title">Author</label>
+        <br>
+        <input type="text" name="author1"
+               placeholder="Insert Author"
+               value="{{ request.form['author1'] }}"></input>
+        <br>
+        <br>
+        <button type="submit">Insert Book</button>
+      </form>  
+  </body>

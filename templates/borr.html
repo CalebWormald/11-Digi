@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    {% if title %}
+     <title>Caleb's Library - {{ title }}</title>
+    {% else %}
+      <title>Caleb's Library</title>
+    {% endif %}
+  </head>
+  <body>
+    <header class="site-header">
+        <ul>
+          <li><a class="nav-item nav-link" href="/">Home</a></li>
+          <li><a class="nav-item nav-link" href="/lib">Library</a></li>
+          <li><a class="nav-item nav-link" href="/insert">Insert Book</a></li>
+          <li><a class="nav-item nav-link" href="/borrowedbooks">Borrowed Books</a></li>
+          </ul>   
+    </header>
+      <div class="form"> 
+        <form action="borr" method="POST">
+        <div class="container">
+            <br>
+            <h2>Insert Information To Borrow {{ title['idbooks']}}</h2>
+            <label for="fname"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First Name" name="fname">
+            <br><br>
+            <label for="lname"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="lname">
+            <br><br>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email">
+            <br><br>
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="text" placeholder="Enter Phone Number" name="phonenum">
+            <br><br>
+            <label for="address1"><b>Address</b></label>
+            <input type="text" placeholder="Enter Address" name="address1">
+            <br><br>
+            <label for="city"><b>City</b></label>
+            <input type="text" placeholder="Enter City" name="city">
+            <br><br>
+            <button type="submit">Borrow Book</button>
+        </div>
+        </form>
+  </body>
+</html>

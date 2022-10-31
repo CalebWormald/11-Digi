@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    {% if title %}
+        <title>Caleb's Library - {{ title }}</title>
+    {% else %}
+        <title>Caleb's Library</title>
+    {% endif %}
+   </head>
+   <body>
+    <header class="site-header">
+      <ul>
+        <a class="nav-item nav-link" href="/">Home</a>
+        <a class="nav-item nav-link" href="/login">Login</a>
+        <a class="nav-item nav-link" href="/search/">Search</a>
+        <a class="nav-item nav-link" href="/lib">Library</a>
+        <a class="nav-item nav-link" href="/register">Register</a>
+        <a class="nav-item nav-link" href="/borr">Borrow</a>
+      </ul>   
+  </header>
+    <h1>Register</h1>
+    <form method="post">
+      <div class="reg">
+        <label for="fname"><b>First Name:</b></label><br>
+        <input type="text" placeholder="Enter Name" name="fname" required="fname">
+        <br><br>
+        <label for="lname"><b>Last Name:</b></label><br>
+        <input type="text" placeholder="Enter Name" name="lname" required="lname">
+        <br><br>
+        <label for="fname"><b>E-mail:</b></label><br>
+        <input type="text" placeholder="Enter E-mail" name="email" required="email">
+        <br><br>
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" required="password">
+        <br><br>
+        <label for="phonenumber"><b>Phonenumber</b></label><br>
+        <input type="text" placeholder="Enter Phonenumber" name="phonenumber" required="Phonenumber">
+        <br><br>
+        <label for="address1"><b>Address 1:</b></label><br>
+        <input type="text" placeholder="Enter Address" name="address1" required="address1">
+        <br><br>
+        <!--<label for="address2"><b>Address 2:</b></label><br>
+        <input type="text" placeholder="Enter Address" name="address2">
+        <br><br>!-->
+        <label for="suburb"><b>Suburb:</b></label><br>
+        <input type="text" placeholder="Enter Suburb" name="suburb" required="suburb">
+        <br><br>
+        <label for="city"><b>City:</b></label><br>
+        <input type="text" placeholder="Enter City" name="city" required="city">
+        <br><br>
+        <label for="postcode"><b>Postcode:</b></label><br>
+        <input type="text" placeholder="Enter Postcode" name="postcode" required="postcode">
+        <br><br>
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </body>
+</html>

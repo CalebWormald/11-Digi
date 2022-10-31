@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    {% if title %}
+      <title>Caleb's Library - {{ title }}</title>
+    {% else %}
+      <title>Caleb's Library</title>
+    {% endif %}
+   </head>
+   <body>
+    <header class="site-header">
+      <ul>
+        <a class="nav-item nav-link" href="/">Home</a>
+        <a class="nav-item nav-link" href="/login">Login</a>
+        <a class="nav-item nav-link" href="/search/">Search</a>
+        <a class="nav-item nav-link" href="/lib">Library</a>
+        <a class="nav-item nav-link" href="/register">Register</a>
+        <a class="nav-item nav-link" href="/borr">Borrow</a>
+      </ul>   
+  </header>
+     <h1>Login</h1>
+    <form method="post">
+      <div class="container">
+        <label for="Name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="Name" required="name"><br>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required="password"><br>
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </body>
+</html>

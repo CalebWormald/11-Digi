@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    {% if title %}
+      <title>Caleb's Library - {{ title }}</title>
+    {% else %}
+      <title>Caleb's Library</title>
+    {% endif %}  
+   </head>
+   <body>
+    <header class="site-header">
+      <ul>
+        <a class="nav-item nav-link" href="/">Home</a>
+        <a class="nav-item nav-link" href="/login">Login</a>
+        <a class="nav-item nav-link" href="/search/">Search</a>
+        <a class="nav-item nav-link" href="/lib">Library</a>
+        <a class="nav-item nav-link" href="/register">Register</a>
+        <a class="nav-item nav-link" href="/borr">Borrow</a>
+      </ul>   
+  </header>
+  
+    <h1>Welcome to Books for Books lending service</h1>
+    <p>Please enter in the book you wish to borrow</p>
+    <form method="post">
+      <label for="Title">Name of Book:</label><br>
+      <input type="text" id="Title" name="Title"><br>
+      <label for="author">Author:</label><br>
+      <input type="text" id="author" name="author"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

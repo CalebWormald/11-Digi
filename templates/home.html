@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    {% if title %}
+     <title>Caleb's Library - {{ title }}</title>
+    {% else %}
+      <title>Caleb's Library</title>
+    {% endif %}
+  </head>
+  <body>
+    <header class="site-header">
+        <ul>
+          <li><a class="nav-item nav-link" href="/">Home</a></li>
+          <li><a class="nav-item nav-link" href="/lib">Library</a></li>
+          <li><a class="nav-item nav-link" href="/insert">Insert Book</a></li>
+          <li><a class="nav-item nav-link" href="/borrowedbooks">Borrowed Books</a></li>
+        </ul>   
+    </header>
+    <br><br>
+    <div class="banner"> 
+      <centre><h1 id="heading">Welcome to Caleb's Library</h1></centre>
+    </div>
+    <p>This is a Book lending service for the members of C.A.S. & Year 11 Digi class</p>
+    <form action="/lib">
+    </form>
+ </body>
+</html>

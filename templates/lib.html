@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    {% if title %}
+        <title>Caleb's Library - {{ title }}</title>
+    {% else %}
+        <title>Caleb's Library</title>
+    {% endif %}
+   </head>
+   <body>
+    <header class="site-header">
+      <ul>
+        <li><a class="nav-item nav-link" href="/">Home</a></li>
+        <li><a class="nav-item nav-link" href="/lib">Library</a></li>
+        <li><a class="nav-item nav-link" href="/insert">Insert Book</a></li>
+        <li><a class="nav-item nav-link" href="/borrowedbooks">Borrowed Books</a></li>
+    </ul>   
+  </header>
+  <br><br><br>
+  <center>
+    <label style="font-size: 35px;">These are the books in the Library</label>
+      <table> 
+        <tr>
+          <th>--Title--</th><th>--Author--</th><th>--Borrow--</th>
+        </tr>
+        {% for titles in term %}
+        <tr>
+          <td>{{ titles['title']}}</td>
+          <td>{{ titles['author']}}</td>
+          <td><a href="/borr"><img src="/static/photos/thumb.png" style="width: 20px; height: 20px;"></a></td>
+        </tr> 
+        {% endfor %}
+      </table>
+  </center>
+  </body>
+</html>

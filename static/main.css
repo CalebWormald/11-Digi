@@ -1,0 +1,110 @@
+body{
+  background-color: rgb(0, 0, 0);
+}
+
+h1{
+  color: rgb(0, 0, 0);
+}
+
+h2{
+  color: rgb(0, 255, 255);
+  font-size: 50px;
+}
+
+h3{
+  color: rgb(0, 255, 255);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(194, 194, 194);
+}
+
+a:active {
+  color: rgb(0, 0, 0);
+}
+
+p{
+  color: rgb(0, 255, 255);
+  font-size: 16px;
+  font-style: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
+}
+
+label{
+  color: rgb(0, 255, 255);
+}
+
+table{
+  color: rgb(0, 255, 255);
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  border: 5px solid #000000;
+  background-color: rgb(0, 255, 255);
+}
+
+.active {
+  background-color: #505050;
+}
+
+li {
+  float: left;
+  display: inline;
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a{
+  display: block;
+  padding: 8px;
+}
+
+li a:hover {
+  background-color: rgb(0, 255, 255);
+}
+
+.banner{
+  color: rgb(0, 0, 0);
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 225px;
+  padding-bottom: 225px;
+  background-image: url("/static/photos/Screen\ Shot\ 2022-10-31 at 11.42.56.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#heading{
+  padding-left: 25px;
+  border: 0px;
+  background-color: rgba(171, 170, 170, 0.50);
+}
+table
+{
+  padding: 5px;
+  
+}
+
+button{
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 255, 255);
+}
